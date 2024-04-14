@@ -4,6 +4,7 @@ import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import MainContainer from "./MainContainer";
 import MovieContainer from "./MovieContainer";
+import Footer from "./Footer";
 import useNowPlayingMovies from "../hooks/useNowPlayingMovies";
 import usePopularMovies from "../hooks/usePopularMovies";
 import useTopRatedMovies from "../hooks/useTopRatedMovies";
@@ -36,6 +37,7 @@ const Browse = () => {
           <>
             <MainContainer />
             <MovieContainer />
+            <Footer />
           </>
         )}
       </div>

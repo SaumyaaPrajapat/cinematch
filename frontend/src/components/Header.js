@@ -56,6 +56,7 @@ const Header = () => {
               <a
                 href="https://in.bookmyshow.com/"
                 className="text-lg font-medium text-white"
+                target="_blank"
               >
                 Ticket booking
               </a>

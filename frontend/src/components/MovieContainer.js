@@ -15,6 +15,10 @@ const MovieContainer = () => {
         />
         <MovieList title={"Top Tated Movies"} movies={movie.topRatedMovies} />
         <MovieList title={"Upcoming Movies"} movies={movie.upcomingMovies} />
+        <MovieList title={"Joyful Movies"} movies={movie.popularMovie} />
+        <MovieList title={"Emotional Movies"} movies={movie.topRatedMovies} />
+        <MovieList title={"Action Movies"} movies={movie.upcomingMovies} />
+        <MovieList title={"Comedies Movies"} movies={movie.popularMovie} />
       </div>
     </div>
   );

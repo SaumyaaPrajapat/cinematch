@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import { IoMdSearch, IoIosLogOut } from "react-icons/io";
-//import { IoLogOut } from "react-icons/io5";
+import { IoIosLogOut } from "react-icons/io";
 import { useSelector, useDispatch } from "react-redux";
 import { API_END_POINT } from "../utils/constant";
 import axios from "axios";
@@ -75,7 +74,11 @@ const Header = () => {
               {toggle ? "Home" : "Search"}
             </button>
             <button className="bg-blue-800 text-white px-4 py-2 ml-2 rounded">
-              <a href="https://ferr-nu.vercel.app/" className="text-white">
+              <a
+                href="https://ferr-nu.vercel.app/"
+                className="text-white"
+                target="_blank"
+              >
                 Tryme
               </a>
             </button>
@@ -90,9 +93,10 @@ const Header = () => {
               open={Boolean(anchorEl)}
               onClose={handleMenuClose}
             >
-              <MenuItem onClick={handleMenuClose}>Happy</MenuItem>
-              <MenuItem onClick={handleMenuClose}>Surprise</MenuItem>
               <MenuItem onClick={handleMenuClose}>Joyful</MenuItem>
+              <MenuItem onClick={handleMenuClose}>Emotional</MenuItem>
+              <MenuItem onClick={handleMenuClose}>Action</MenuItem>
+              <MenuItem onClick={handleMenuClose}>Comedies</MenuItem>
             </Menu>
             <button
               onClick={logoutHandler}

@@ -5,7 +5,7 @@ export const options = {
   headers: {
     accept: "application/json",
     Authorization:
-      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJlMGE5YTg5NTMxMmE2M2JiODdlNWM4YjViZjY0N2UwOSIsInN1YiI6IjY2MWQ1NDQ1Y2ZmZWVkMDEzMDkwZGU5YSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.2O76O5RcFmDRQeGwPZHVBhcLpuDrSgx9xUoCwZ-W3Jw",
+      "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJhZGJlZjViMDUzNWE3OGYwMjllMTQ0NDE5NTQ4MjM4MCIsInN1YiI6IjY1MDRhMjNkNTllOGE5MDExZWNhYTVjZSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.LTBaAb_2NPRGPr2HeGszyFDP-onLh-fiL7fzmnOFZUg",
   },
 };
 export const Now_Playing_Movie =

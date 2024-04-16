@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { IoIosLogOut } from "react-icons/io";
 import { useSelector, useDispatch } from "react-redux";
 import { API_END_POINT } from "../utils/constant";
@@ -18,6 +18,7 @@ const Header = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const [anchorEl, setAnchorEl] = useState(null);
+
   const handleMenuOpen = (event) => {
     setAnchorEl(event.currentTarget);
   };
@@ -41,6 +42,11 @@ const Header = () => {
 
   const toggleHandler = () => {
     dispatch(setToggle());
+  };
+
+  const handleFilterClick = (filter) => {
+    // Redirect to the Browse page with the filter parameter
+    navigate(`/browse?filter=${filter}`);
   };
 
   return (
@@ -93,10 +99,18 @@ const Header = () => {
               open={Boolean(anchorEl)}
               onClose={handleMenuClose}
             >
-              <MenuItem onClick={handleMenuClose}>Joyful</MenuItem>
-              <MenuItem onClick={handleMenuClose}>Emotional</MenuItem>
-              <MenuItem onClick={handleMenuClose}>Action</MenuItem>
-              <MenuItem onClick={handleMenuClose}>Comedies</MenuItem>
+              <MenuItem onClick={() => handleFilterClick("joyful")}>
+                Joyful
+              </MenuItem>
+              <MenuItem onClick={() => handleFilterClick("emotional")}>
+                Emotional
+              </MenuItem>
+              <MenuItem onClick={() => handleFilterClick("action")}>
+                Action
+              </MenuItem>
+              <MenuItem onClick={() => handleFilterClick("comedies")}>
+                Comedies
+              </MenuItem>
             </Menu>
             <button
               onClick={logoutHandler}
